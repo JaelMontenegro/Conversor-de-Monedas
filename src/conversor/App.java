@@ -26,7 +26,7 @@ public class App {
 			JOptionPane.showConfirmDialog(null, "Resultado de la conversión : " + valorConvertido, "Resultado",
 					JOptionPane.OK_OPTION);
 			continuar = JOptionPane.showConfirmDialog(null, "¿Desea Continuar?", "Resultado", JOptionPane.YES_NO_OPTION);
-		}
+		} 
 
 	}
 
