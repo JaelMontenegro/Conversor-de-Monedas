@@ -9,20 +9,19 @@ public class ConversorMoneda extends ConversorBase {
 
 	}
 
-	@Override
-	public String getNombre() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
+	
 
 	@Override
 	public TipoDeConversionBase[] getTiposDeConversion() {
 		// TODO Auto-generated method stub
 		return new TipoDeConversionBase[] {
-				new ConversionProporcional(0.1, "Bolivares a Dolares 0.1"),
-				new ConversionProporcional(0.25, "Bolivares a Dolares 0.25"),
-				new ConversionProporcional(0.5, "Bolivares a Dolares 0.5"),
-				new ConversionProporcional(1, "Bolivares a Dolares 1")};
+				new ConversionLineal(801.45, "Dolares a Pesos Chilenos"),
+				new ConversionLineal(1.0/801.45, "Pesos Chilenos a Dólares"),
+				new ConversionLineal(872.31, "Euros a Pesos Chilenos"),
+				new ConversionLineal(1.0/872.31, "Pesos Chilenos a Euros"),
+				new ConversionLineal(1.09, "Euros a Dólares"),
+				new ConversionLineal(1.0/1.09, "Dólares a Euros")};
 	}
 
 }
